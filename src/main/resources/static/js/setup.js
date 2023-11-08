@@ -16,6 +16,8 @@ function setupInitialization()
 
     serverName = document.getElementById("server-name");
     port = document.getElementById("port");
+    let host = document.getElementById("host");
+    console.log(host);
 
     setupXHR = new XMLHttpRequest();
 
@@ -117,8 +119,13 @@ function sendSetupRequest()
     {
         "serverName": serverName.value,
         "theme": html.getAttribute("theme"),
-        "port": port.value
+        "port": port.value,
+        "host": host.value
     }
+
+    console.log("Hello, this is a log message!");
+    console.log(host.value);
+    console.log(port.value);
 
     if (port.value != 4000)
     {

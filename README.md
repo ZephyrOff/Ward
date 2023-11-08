@@ -35,3 +35,22 @@ Ward works nice on all popular operating systems, because it uses [OSHI](https:/
     • Download latest .jar from releases section
     • Execute jar on Windows or Linux with administrative rights
     • Enter localhost:4000 and set up application
+
+---
+
+### Configuration
+
+You can create a setup.ini file where the .jar file is located to configure the application.
+
+```ini
+[setup]
+serverName = VPS
+theme = light
+port = 2222
+host = 127.0.0.1
+```
+
+- serverName for the name of the server that will be displayed on the page
+- theme: dark or light
+- port: Port used
+- host: binding host IP

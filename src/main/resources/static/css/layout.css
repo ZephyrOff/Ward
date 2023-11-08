@@ -320,6 +320,7 @@ body
 .port
 {
     position: relative;
+    margin-top: 10px;
     top: var(--top-port);
     left: var(--left-port);
     height: var(--height-port);
@@ -333,6 +334,7 @@ body
     border-radius: var(--border-radius-port);
     border: 0;
     outline: none;
+    padding-top: 5px;
 }
 
 .port::placeholder
@@ -354,6 +356,47 @@ body
 }
 
 .port::-ms-clear
+{
+    display: none;
+}
+
+.host
+{
+    position: relative;
+    top: var(--top-host);
+    left: var(--left-host);
+    height: var(--height-host);
+    width: var(--width-host);
+    text-align: center;
+    letter-spacing: var(--letter-spacing-5px);
+    font-size: var(--font-size-14pt);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-host);
+    background: var(--background-host);
+    border-radius: var(--border-radius-host);
+    border: 0;
+    outline: none;
+}
+
+.host::placeholder
+{
+    letter-spacing: 0;
+    color: var(--color-host-placeholder);
+}
+
+.host::-webkit-input-placeholder
+{
+    letter-spacing: 0;
+    color: var(--color-host-placeholder);
+}
+
+.host::-moz-placeholder
+{
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.host::-ms-clear
 {
     display: none;
 }

@@ -26,7 +26,9 @@ html[theme = "light"]
     --color-main-settings-input-placeholder: var(--grey-light);
     --color-label-additional-settings: var(--grey-light);
     --color-theme-buttons-input: var(--grey);
+    --color-host: var(--grey);
     --color-port: var(--grey);
+    --color-host-placeholder: var(--grey-light);
     --color-port-placeholder: var(--grey-light);
     --color-submit: var(--grey);
     --color-hw-type: var(--black);
@@ -63,6 +65,7 @@ html[theme = "light"]
     --background-button-squares-grid-second: var(--grey-light);
     --background-theme-buttons-first: var(--purple-light);
     --background-theme-buttons-second: var(--grey-light);
+    --background-host: var(--white);
     --background-port: var(--white);
     --background-submit: var(--green-light);
     --background-card: var(--white);
@@ -111,7 +114,9 @@ html[theme = "dark"]
     --color-main-settings-input-placeholder: var(--white);
     --color-label-additional-settings: var(--grey-light);
     --color-theme-buttons-input: var(--grey);
+    --color-host: var(--white);
     --color-port: var(--white);
+    --color-host-placeholder: var(--white);
     --color-port-placeholder: var(--white);
     --color-submit: var(--white);
     --color-hw-type: var(--white);
@@ -148,6 +153,7 @@ html[theme = "dark"]
     --background-button-squares-grid-second: var(--grey-light);
     --background-theme-buttons-first: var(--purple-light);
     --background-theme-buttons-second: var(--grey-light);
+    --background-host: var(--grey);
     --background-port: var(--grey);
     --background-submit: var(--grey-light);
     --background-card: var(--grey-dark);

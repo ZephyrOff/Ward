@@ -52,6 +52,7 @@ public class SetupService
             putInIniFile(file, "setup", "serverName", setupDto.getServerName());
             putInIniFile(file, "setup", "theme", setupDto.getTheme());
             putInIniFile(file, "setup", "port", setupDto.getPort());
+            putInIniFile(file, "setup", "host", setupDto.getHost());
 
             Ward.restart();
         }

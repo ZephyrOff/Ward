@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 import java.io.File;
 import java.io.IOException;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 /**
  * ServletComponent used for application port changing
  * @author Rudolf Barbu
@@ -37,6 +40,14 @@ public class ServletComponent implements WebServerFactoryCustomizer<TomcatServle
             {
                 File file = new File(Ward.SETUP_FILE_PATH);
                 tomcatServletWebServerFactory.setPort(Integer.parseInt(utilitiesComponent.getFromIniFile(file, "setup", "port")));
+
+                try {
+                    InetAddress localhost = InetAddress.getByName(utilitiesComponent.getFromIniFile(file, "setup", "host"));
+                    tomcatServletWebServerFactory.setAddress(localhost);
+                } catch (UnknownHostException e) {
+                    e.printStackTrace();
+                    // Gérer l'exception si nécessaire
+                }
             }
             catch (IOException exception)
             {

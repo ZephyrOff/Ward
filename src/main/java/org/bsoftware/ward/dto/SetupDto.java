@@ -41,4 +41,12 @@ public class SetupDto
     @Min(value = 10)
     @Max(value = 65535)
     private String port;
+
+    /**
+    * Bind Host Field
+    */
+    @NotNull
+    @NotEmpty
+    @Size(min = 1, max = 20)
+    private String host;
 }

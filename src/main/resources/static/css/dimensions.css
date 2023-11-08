@@ -26,6 +26,7 @@
     --top-additional-settings: 1.000rem;
     --top-theme-buttons-input: 1.938rem;
     --top-button-squares-grid: 0.222rem;
+    --top-host: 2.750rem;
     --top-port: 2.750rem;
     --top-header: 1.500rem;
     --top-label-hw-info: 0.562rem;
@@ -67,6 +68,7 @@
     --left-button-squares-grid-first: 1.500rem;
     --left-button-squares-grid-second: 19.688rem;
     --left-theme-buttons-first: 1.500rem;
+    --left-host: 1.500rem;
     --left-port: 1.500rem;
     --left-submit: 6.563rem;
     --left-header: 1.500rem;
@@ -116,18 +118,19 @@
 
     /* height */
     --height-body: 100%;
-    --height-setup: 26.706rem;
-    --height-setup-div: 26.706rem;
+    --height-setup: 30.706rem;
+    --height-setup-div: 31.706rem;
     --height-clouds: 8.281rem;
     --height-clouds-img: 5.438rem;
     --height-background: 8.281rem;
-    --height-form: 18.425rem;
+    --height-form: 23.425rem;
     --height-form-squares-grid-div: 0.625rem;
     --height-main-settings: 1.875rem;
     --height-main-settings-underline: 0.313rem;
     --height-main-settings-select: 1.875rem;
     --height-theme-buttons-input: 2.188rem;
     --height-button-squares-grid-div: 0.625rem;;
+    --height-host: 3.125rem;
     --height-port: 3.125rem;
     --height-submit: 1.875rem;
     --height-index-xl: 35.031rem;
@@ -180,6 +183,7 @@
     --width-main-settings-select: 18.875rem;
     --width-theme-buttons-input: 9.063rem;
     --width-button-squares-grid-div: 0.625rem;
+    --width-host: 18.875rem;
     --width-port: 18.875rem;
     --width-submit: 8.750rem;
     --width-hw-logo: 3.750rem;
@@ -234,6 +238,7 @@
 
     /* border-radius */
     --border-radius-setup-div: 1.250rem;
+    --border-radius-host: 0.000rem 0.000rem 0.625rem 0.625rem;
     --border-radius-port: 0.000rem 0.000rem 0.625rem 0.625rem;
     --border-radius-card: 1.250rem;
     --border-radius-hw-logo: 50%;
@@ -261,4 +266,8 @@
     --transform-contacts-links-a-second-active: scale(0.9);
     --transform-uptime-squares-grid-second: scale(1.3);
     --transform-chart-rectangle-grid-div-active: scale(0.9);
+}
+
+#port {
+    padding-top: 0.5rem; /* Ajoute un padding-top de 10px */
 }
